@@ -17,6 +17,7 @@ let btn6 = document.getElementById("btn6");
 btn1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
+		
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 1!");
@@ -28,6 +29,7 @@ btn1.addEventListener("click", function(){
 btn2.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
+		
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 2!");
@@ -39,6 +41,7 @@ btn2.addEventListener("click", function(){
 btn3.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
+		
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 3!");
@@ -50,6 +53,7 @@ btn3.addEventListener("click", function(){
 btn4.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
+		
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 4!");
@@ -61,6 +65,7 @@ btn4.addEventListener("click", function(){
 btn5.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
+		
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 5!");
@@ -71,8 +76,8 @@ btn5.addEventListener("click", function(){
 
 btn6.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide()
-		btn6.hide();
+		tg.MainButton.hide();
+		
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 6!");
