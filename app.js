@@ -71,7 +71,8 @@ btn5.addEventListener("click", function(){
 
 btn6.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+		tg.MainButton.hide()
+		btn6.hide();
 	}
 	else {
 		tg.MainButton.setText("Вы выбрали товар 6!");
