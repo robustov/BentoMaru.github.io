@@ -23,19 +23,31 @@ body {
 .img {
 	width: 150px;
 }
+.flowers {
+	width: 20px;
+	position: relative;
+	top: 20px;
+	right: -15px;
+}
+
+.counter {
+	position: relative;
+	top: 20px;
+	right: -15px;	
+}
 
 .iteml {
 	text-align: center;
 	position: relative;
 	right: -10px;
-	color: black;
+	color: var(--tg-theme-text-color);
 }
 
 .itemr {
 	text-align: center;
 	position: relative;
 	right: -50px;
-	color: black;
+	color: var(--tg-theme-text-color);
 }
 
 .btn {
