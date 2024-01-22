@@ -14,14 +14,24 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 200px 200px 200px;
+	margin-left: auto; 
+	margin-right: 0;
 }
 
 .img {
 	width: 150px;
 }
 
-.item {
+.iteml {
 	text-align: center;
+	position: relative;
+	right: -10px;
+}
+
+.itemr {
+	text-align: center;
+	position: relative;
+	right: -50px;
 }
 
 .btn {
