@@ -14,6 +14,16 @@ let btn4 = document.getElementById("btn4");
 let btn5 = document.getElementById("btn5");
 let btn6 = document.getElementById("btn6");
 
+
+let am1 = 0;
+let am2 = 0;
+let am3 = 0;
+let am4 = 0;
+let am5 = 0;
+let am6 = 0;
+let am7 = 0;
+let am8	 = 0;
+
 btn1.addEventListener("click", function(){
 	if (tg.MainButton.isVisible) {
 		tg.MainButton.hide();
