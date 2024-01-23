@@ -28,15 +28,15 @@ body {
 }
 
 .img {
-	width: 150px;
+	width: 120px;
 	z-index: 2;
-	height: 150px;
+	height: 120px;
 }
 .counters {
-	position: relative;
-	left: 45px;
+	position: absolute;
+	right: 0px;
 	z-index: 5;
-	top: 6px;
+	top: 27px;
 	font-size: 15px;
 }
 
@@ -49,22 +49,22 @@ body {
 }
 
 .counter {
-	position: relative;
-	top: 20px;
-	right: -15px;	
+	position: absolute;
+	top: -20px;
+	right: -150px;	
 }
 
 .iteml {
 	text-align: center;
 	position: relative;
-	right: -10px;
+	right: -20px;
 	color: var(--tg-theme-text-color);
 }
 
 .itemr {
 	text-align: center;
 	position: relative;
-	right: -100px;
+	right: -90px;
 	color: var(--tg-theme-text-color);
 }
 
