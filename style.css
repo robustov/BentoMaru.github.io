@@ -22,12 +22,19 @@ body {
 
 .img {
 	width: 150px;
+	z-index: 2;
 }
-.flowers {
-	width: 20px;
+.counters {
+	position: absolute;
+	right: 40px;
+	bottom: 160px;
+}
+
+.flower {
 	position: relative;
-	top: 20px;
-	right: -15px;
+	max-width: 30px;
+	top: 15px;
+	z-index: 1;
 }
 
 .counter {
