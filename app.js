@@ -177,8 +177,13 @@ btn8m.addEventListener("click", function(){
 
 
 
-Telegram.WebApp.onEvent("mainButtonClicked", function(){
-	tg.sendData(item);
+
+
+tg.MainButton.show()
+
+Telegram.WebApp.onEvent('mainButtonClicked', function(){
+	tg.sendData(am1); 
+	//при клике на основную кнопку отправляем данные в строковом виде
 });
 
 
