@@ -6,6 +6,9 @@ body {
 	background: var(--tg-theme-bg-color);
 }
 
+.name {
+	margin: 0px;
+}
 
 .price {
 	line-height: 0.2;
@@ -25,19 +28,23 @@ body {
 }
 
 .img {
-	width: 150px;
+	width: 100px;
 	z-index: 2;
+	height: 100px;
 }
 .counters {
-	position: absolute;
-	right: 40px;
-	bottom: 160px;
+	position: relative;
+	left: 45px;
+	z-index: 5;
+	top: 6px;
+	font-size: 15px;
 }
 
 .flower {
-	position: relative;
-	max-width: 30px;
+	position: absolute;
+	max-width: 40px;
 	top: 15px;
+	right: -15px;
 	z-index: 1;
 }
 
