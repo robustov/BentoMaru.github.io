@@ -182,7 +182,7 @@ btn8m.addEventListener("click", function(){
 tg.MainButton.show()
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
-	tg.sendData(am1); 
+	tg.sendData("asdasd"); 
 	//при клике на основную кнопку отправляем данные в строковом виде
 });
 
