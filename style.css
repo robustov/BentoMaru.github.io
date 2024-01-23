@@ -46,6 +46,7 @@ body {
 	top: 15px;
 	right: -15px;
 	z-index: 1;
+	color: black;
 }
 
 .counter {
@@ -86,6 +87,25 @@ body {
 
 .usercard {
 	text-align: center;
+
+}
+
+.inputs {
+	text-align: center;
+	border: 1px solid #cccccc; 
+	border-radius: 3px; 
+	-webkit-border-radius: 3px; 
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	background: #ffffff !important;
+	outline: none;
+	height: 24px;
+	width: 300px;
+	color: #cccccc;
+	font-size: 11px;
+	font-family: Tahoma;
+	margin: 15px;
+
 }
 
 
@@ -102,4 +122,5 @@ body {
    color: #cccccc;
    font-size: 11px;
    font-family: Tahoma;
+   margin: 30px;
 }
