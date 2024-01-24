@@ -23,7 +23,7 @@ let btn7p = document.getElementById("btn7+");
 let btn7m = document.getElementById("btn7-");
 let btn8p = document.getElementById("btn8+");
 let btn8m = document.getElementById("btn8-");
-
+let locationb = document.getElementById("loc");
 
 
 
@@ -175,7 +175,10 @@ btn8m.addEventListener("click", function(){
 });
 
 
-
+locationb.addEventListener("click", function(){
+		tg.MainButton.color = "#2cab37"
+		tg.MainButton.setText("Выберите товары")
+});
 
 
 
