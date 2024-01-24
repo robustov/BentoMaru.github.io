@@ -55,13 +55,14 @@ document.getElementById("count8").innerText = am8
 btn1p.addEventListener("click", function(){
 		am1 = am1+1;
 		document.getElementById("count1").innerText = am1;
-		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р")
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn1m.addEventListener("click", function(){
 	if (am1 > 0) {
 		am1 = am1-1;
 		document.getElementById("count1").innerText = am1;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -72,12 +73,14 @@ btn1m.addEventListener("click", function(){
 btn2p.addEventListener("click", function(){
 		am2 = am2+1;
 		document.getElementById("count2").innerText = am2;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn2m.addEventListener("click", function(){
 	if (am2 > 0) {
 		am2 = am2-1;
 		document.getElementById("count2").innerText = am2;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -88,12 +91,14 @@ btn2m.addEventListener("click", function(){
 btn3p.addEventListener("click", function(){
 		am3 = am3+1;
 		document.getElementById("count3").innerText = am3;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn3m.addEventListener("click", function(){
 	if (am3 > 0) {
 		am3 = am3-1;
 		document.getElementById("count3").innerText = am3;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -103,12 +108,14 @@ btn3m.addEventListener("click", function(){
 btn4p.addEventListener("click", function(){
 		am4 = am4+1;
 		document.getElementById("count4").innerText = am4;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn4m.addEventListener("click", function(){
 	if (am4 > 0) {
 		am4 = am4-1;
 		document.getElementById("count4").innerText = am4;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -119,12 +126,14 @@ btn4m.addEventListener("click", function(){
 btn5p.addEventListener("click", function(){
 		am5 = am5+1;
 		document.getElementById("count5").innerText = am5;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn5m.addEventListener("click", function(){
 	if (am5 > 0) {
 		am5 = am5-1;
 		document.getElementById("count5").innerText = am5;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -135,12 +144,14 @@ btn5m.addEventListener("click", function(){
 btn6p.addEventListener("click", function(){
 		am6 = am6+1;
 		document.getElementById("count6").innerText = am6;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn6m.addEventListener("click", function(){
 	if (am6 > 0) {
 		am6 = am6-1;
 		document.getElementById("count6").innerText = am6;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -152,12 +163,14 @@ btn6m.addEventListener("click", function(){
 btn7p.addEventListener("click", function(){
 		am7 = am7+1;
 		document.getElementById("count7").innerText = am7;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn7m.addEventListener("click", function(){
 	if (am7 > 0) {
 		am7 = am7-1;
 		document.getElementById("count7").innerText = am7;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
@@ -166,12 +179,14 @@ btn7m.addEventListener("click", function(){
 btn8p.addEventListener("click", function(){
 		am8 = am8+1;
 		document.getElementById("count8").innerText = am8;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 });
 
 btn8m.addEventListener("click", function(){
 	if (am8 > 0) {
 		am8 = am8-1;
 		document.getElementById("count8").innerText = am8;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	}
 });
 
