@@ -58,14 +58,14 @@ body {
 .iteml {
 	text-align: center;
 	position: relative;
-	right: 0px;
+	left: 0px;
 	color: var(--tg-theme-text-color);
 }
 
 .itemr {
 	text-align: center;
 	position: relative;
-	right: -60px;
+	right: -50px;
 	color: var(--tg-theme-text-color);
 }
 
