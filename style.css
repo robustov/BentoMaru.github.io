@@ -92,12 +92,12 @@ body {
 
 .inputs {
 	text-align: center;
-	border: 1px solid #cccccc; 
+	border: 1px solid lightgreen; 
 	border-radius: 3px; 
 	-webkit-border-radius: 3px; 
 	-moz-border-radius: 3px;
 	-khtml-border-radius: 3px;
-	background: #ffffff !important;
+	background: var(--tg-theme-bg-color);
 	outline: none;
 	height: 24px;
 	width: 300px;
