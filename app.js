@@ -188,7 +188,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 		// tg.MainButton.color = "#FF0000"
 		// tg.MainButton.setText("Введите адрес")
 	// }
-	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+loc+" "+(""+number)));
+	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+loc+" "+number));
 	
 	//при клике на основную кнопку отправляем данные в строковом виде
 });
