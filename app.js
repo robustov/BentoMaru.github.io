@@ -175,10 +175,7 @@ btn8m.addEventListener("click", function(){
 });
 
 
-locationb.addEventListener("click", function(){
-		tg.MainButton.color = "#2cab37"
-		tg.MainButton.setText("Выберите товары")
-});
+
 
 
 
