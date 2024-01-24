@@ -55,6 +55,7 @@ document.getElementById("count8").innerText = am8
 btn1p.addEventListener("click", function(){
 		am1 = am1+1;
 		document.getElementById("count1").innerText = am1;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р")
 });
 
 btn1m.addEventListener("click", function(){
