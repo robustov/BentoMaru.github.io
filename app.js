@@ -4,7 +4,7 @@ tg.expand();
 tg.MainButton.show()
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
-tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
+
 
 let item = "";
 
@@ -48,7 +48,7 @@ document.getElementById("count8").innerText = am8
 
 
 
-
+tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 
 
 
