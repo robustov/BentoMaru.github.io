@@ -31,8 +31,8 @@ let locationb = document.getElementById("loc");
 //let im1 = document.getElementById("im1");
 
 
-document.getElementById("count1").innerText = 0;
-let am1 = 0;
+
+let am1 = localStorage.getItem("am1");
 let am2 = localStorage.getItem("am2");
 let am3 = localStorage.getItem("am3");
 let am4 = localStorage.getItem("am4");
@@ -42,12 +42,12 @@ let am7 = localStorage.getItem("am7");
 let am8	= localStorage.getItem("am8");
 let am9	= localStorage.getItem("am9");
 
-//if(am1 == null){
-//	document.getElementById("count1").innerText = 0;
-//}
-//else{
-//	document.getElementById("count1").innerText = localStorage.getItem("am1")
-//}
+if(am1 == null){
+	document.getElementById("count1").innerText = 0;
+}
+else{
+	document.getElementById("count1").innerText = localStorage.getItem("am1")
+}
 if(am2 == null){
 	document.getElementById("count2").innerText = 0;
 }
@@ -124,20 +124,20 @@ tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*12
 
 
 btn1p.addEventListener("click", function(){
-		//am1 = Number(localStorage.getItem("am1"));
+		am1 = Number(localStorage.getItem("am1"));
 		am1 = am1+1;
 		document.getElementById("count1").innerText = am1;
 		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
-		//localStorage.setItem('am1', am1);
+		localStorage.setItem('am1', am1);
 });
 
 btn1m.addEventListener("click", function(){
-	//am1 = Number(localStorage.getItem("am1"));
+	am1 = Number(localStorage.getItem("am1"));
 	if (am1 > 0) {
 		am1 = am1-1;
 		document.getElementById("count1").innerText = am1;
 		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
-		//localStorage.setItem('am1', am1);
+		localStorage.setItem('am1', am1);
 	}
 });
 
