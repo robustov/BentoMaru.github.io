@@ -23,9 +23,11 @@ body {
 
 .text {
 	text-align: center;
-
+	color: var(--tg-theme-text-color);
 
 }
+
+
 
 
 .arrow {
@@ -37,6 +39,7 @@ body {
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: auto;
 }
 
 
@@ -55,6 +58,7 @@ body {
   right: -10px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: auto;
 }
 
 
@@ -69,4 +73,5 @@ body {
   left: -10px;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-right: auto;
 }
