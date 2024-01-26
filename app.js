@@ -117,8 +117,41 @@ else{
 
 
 
+tg.MainButton.setText("Выберите товары");
 
-tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
+
+
+
+document.getElementById("im1").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im2").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im3").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im4").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im5").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im6").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im7").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+document.getElementById("im8").addEventListener("click", function()){
+	tg.MainButton.hide()
+}
+
+
+
+
+
+
 
 
 
