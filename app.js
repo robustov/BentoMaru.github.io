@@ -122,30 +122,30 @@ tg.MainButton.setText("Выберите товары");
 
 
 
-document.getElementById("im1").addEventListener("click", function()){
+document.getElementById("im1").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im2").addEventListener("click", function()){
+});
+document.getElementById("im2").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im3").addEventListener("click", function()){
+});
+document.getElementById("im3").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im4").addEventListener("click", function()){
+});
+document.getElementById("im4").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im5").addEventListener("click", function()){
+});
+document.getElementById("im5").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im6").addEventListener("click", function()){
+});
+document.getElementById("im6").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im7").addEventListener("click", function()){
+});
+document.getElementById("im7").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
-document.getElementById("im8").addEventListener("click", function()){
+});
+document.getElementById("im8").addEventListener("click", function(){
 	tg.MainButton.hide()
-}
+});
 
 
 
