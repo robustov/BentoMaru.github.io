@@ -26,6 +26,9 @@ let btn8p = document.getElementById("btn8+");
 let btn8m = document.getElementById("btn8-");
 let locationb = document.getElementById("loc");
 
+let im1 = document.getElementById("im1");
+
+
 
 
 let am1 = 0;
@@ -36,6 +39,8 @@ let am5 = 0;
 let am6 = 0;
 let am7 = 0;
 let am8	 = 0;
+
+
 
 document.getElementById("count1").innerText = am1
 document.getElementById("count2").innerText = am2
@@ -50,6 +55,10 @@ document.getElementById("count8").innerText = am8
 
 tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 
+
+im1.addEventListener("click", function(){
+	localStorage.setItem("count1",JSON.stringify(am1));
+});
 
 
 
