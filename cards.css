@@ -36,6 +36,6 @@ body {
 .arrow {
 	fill: var(--tg-theme-text-color);
 	top: -25px;
-	margin-top: 10px;
-	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
