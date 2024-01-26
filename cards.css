@@ -32,47 +32,6 @@ body {
 
 
 .arrow {
-  height: 50px;
-  position: absolute;
-  width: 10px;
-  background: black;
-  margin: 100px;
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
-}
-
-
-.left {
-  transform: rotate(-90deg);
-}
-
-.arrow:after {
-  content: " ";
-  width: 10px;
-  background: black;
-  height: 35px;
-  position: absolute;
-  top: -10px;
-  transform: rotate(-50deg);
-  right: -10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
-}
-
-
-.arrow:before {
-  content: " ";
-  width: 10px;
-  background: black;
-  height: 35px;
-  position: absolute;
-  top: -10px;
-  transform: rotate(50deg);
-  left: -10px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
+	fill: var(--tg-theme-text-color);
+	position: absolute;
 }
