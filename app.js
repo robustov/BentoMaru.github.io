@@ -24,6 +24,8 @@ let btn7p = document.getElementById("btn7+");
 let btn7m = document.getElementById("btn7-");
 let btn8p = document.getElementById("btn8+");
 let btn8m = document.getElementById("btn8-");
+let btn9p = document.getElementById("btn9+");
+let btn9m = document.getElementById("btn9-");
 let locationb = document.getElementById("loc");
 
 //let im1 = document.getElementById("im1");
@@ -38,6 +40,7 @@ let am5 = localStorage.getItem("am5");
 let am6 = localStorage.getItem("am6");
 let am7 = localStorage.getItem("am7");
 let am8	= localStorage.getItem("am8");
+let am9	= localStorage.getItem("am9");
 
 if(am1 == null){
 	document.getElementById("count1").innerText = 0;
@@ -92,6 +95,13 @@ if(am8 == null){
 
 else{
 	document.getElementById("count8").innerText = localStorage.getItem("am8")
+}
+if(am9 == null){
+	document.getElementById("count9").innerText = 0;
+}
+
+else{
+	document.getElementById("count9").innerText = localStorage.getItem("am9")
 }
 
 //document.getElementById("count2").innerText = am2;
@@ -283,7 +293,23 @@ btn8m.addEventListener("click", function(){
 	}
 });
 
+btn9p.addEventListener("click", function(){
+		am9 = Number(localStorage.getItem("am9"));
+		am9 = am9+1;
+		document.getElementById("count9").innerText = am9;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
+		localStorage.setItem('am9', am9);
+});
 
+btn9m.addEventListener("click", function(){
+	am9 = Number(localStorage.getItem("am9"));
+	if (am9 > 0) {
+		am9 = am9-1;
+		document.getElementById("count9").innerText = am9;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
+		localStorage.setItem('am9', am9);
+	}
+});
 
 
 
@@ -291,9 +317,19 @@ btn8m.addEventListener("click", function(){
 
 
 Telegram.WebApp.onEvent('mainButtonClicked', function(){
+	am1 = Number(localStorage.getItem("am1"));
+	am2 = Number(localStorage.getItem("am2"));
+	am3 = Number(localStorage.getItem("am3"));
+	am4 = Number(localStorage.getItem("am4"));
+	am5 = Number(localStorage.getItem("am5"));
+	am6 = Number(localStorage.getItem("am6"));
+	am7 = Number(localStorage.getItem("am7"));
+	am8 = Number(localStorage.getItem("am8"));
+	topay = (""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
-	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" !"+(""+loc)+"!"+(""+number)));
+	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)));
+	localStorage.clear();
 	
 	//при клике на основную кнопку отправляем данные в строковом виде
 });
