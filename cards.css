@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 25px;
+	font-size: 18px;
 	color: var(--tg-theme-text-color);
 	background: var(--tg-theme-bg-color);
 }
@@ -25,6 +25,8 @@ body {
 .text {
 	text-align: center;
 	color: var(--tg-theme-text-color);
+	margin-top: 0px;
+	margin-bottom: 0px;
 
 }
 
@@ -33,7 +35,7 @@ body {
 
 .arrow {
 	fill: var(--tg-theme-text-color);
-	position: absolute;
 	top: -25px;
 	margin-top: 10px;
+	margin-bottom: 5px;
 }
