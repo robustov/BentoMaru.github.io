@@ -33,7 +33,7 @@ body {
 
 .arrow {
   height: 50px;
-  position: relative;
+  position: absolute;
   width: 10px;
   background: black;
   margin: 100px;
