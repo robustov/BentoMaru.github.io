@@ -91,7 +91,7 @@ body {
 
 .inputs {
 	text-align: center;
-	border: 1px solid lightgreen; 
+	border: 2px solid rgb(248, 168, 24); 
 	border-radius: 3px; 
 	-webkit-border-radius: 3px; 
 	-moz-border-radius: 3px;
@@ -101,7 +101,7 @@ body {
 	height: 24px;
 	width: 300px;
 	color: var(--tg-theme-text-color);
-	font-size: 11px;
+	font-size: 13px;
 	font-family: Tahoma;
 	margin: 15px;
 

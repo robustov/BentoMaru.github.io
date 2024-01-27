@@ -117,7 +117,7 @@ else{
 
 
 
-tg.MainButton.setText("Выберите товары");
+tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 
 
 
@@ -334,10 +334,12 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	am7 = Number(localStorage.getItem("am7"));
 	am8 = Number(localStorage.getItem("am8"));
 	let paym = document.getElementById("paym").value;
+	let inname = document.getElementById("inname").value;
+	let com = document.getElementById("com").value;
 	topay = (""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
-	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)));
+	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 	localStorage.clear();
 	
 	//при клике на основную кнопку отправляем данные в строковом виде
