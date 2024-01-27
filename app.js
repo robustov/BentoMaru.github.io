@@ -26,6 +26,20 @@ let btn8p = document.getElementById("btn8+");
 let btn8m = document.getElementById("btn8-");
 let btn9p = document.getElementById("btn9+");
 let btn9m = document.getElementById("btn9-");
+let btn10p = document.getElementById("btn10+");
+let btn10m = document.getElementById("btn10-");
+let btn11p = document.getElementById("btn11+");
+let btn11m = document.getElementById("btn11-");
+let btn12p = document.getElementById("btn12+");
+let btn12m = document.getElementById("btn12-");
+let btn13p = document.getElementById("btn13+");
+let btn13m = document.getElementById("btn13-");
+let btn14p = document.getElementById("btn14+");
+let btn14m = document.getElementById("btn14-");
+let btn15p = document.getElementById("btn15+");
+let btn15m = document.getElementById("btn15-");
+
+
 let locationb = document.getElementById("loc");
 
 //let im1 = document.getElementById("im1");
@@ -41,6 +55,12 @@ let am6 = localStorage.getItem("am6");
 let am7 = localStorage.getItem("am7");
 let am8	= localStorage.getItem("am8");
 let am9	= localStorage.getItem("am9");
+let am10 = localStorage.getItem("am10");
+let am11 = localStorage.getItem("am11");
+let am12 = localStorage.getItem("am12");
+let am13 = localStorage.getItem("am13");
+let am14 = localStorage.getItem("am14");
+let am15 = localStorage.getItem("am15");
 
 if(am1 == null){
 	document.getElementById("count1").innerText = 0;
@@ -103,6 +123,54 @@ if(am9 == null){
 else{
 	document.getElementById("count9").innerText = localStorage.getItem("am9")
 }
+if(am10 == null){
+	document.getElementById("count10").innerText = 0;
+}
+
+else{
+	document.getElementById("count10").innerText = localStorage.getItem("am10")
+}
+if(am11 == null){
+	document.getElementById("count11").innerText = 0;
+}
+
+else{
+	document.getElementById("count11").innerText = localStorage.getItem("am11")
+}
+if(am12 == null){
+	document.getElementById("count12").innerText = 0;
+}
+
+else{
+	document.getElementById("count12").innerText = localStorage.getItem("am12")
+}
+if(am13 == null){
+	document.getElementById("count13").innerText = 0;
+}
+
+else{
+	document.getElementById("count13").innerText = localStorage.getItem("am13")
+}
+if(am14 == null){
+	document.getElementById("count14").innerText = 0;
+}
+
+else{
+	document.getElementById("count14").innerText = localStorage.getItem("am14")
+}
+if(am15 == null){
+	document.getElementById("count15").innerText = 0;
+}
+
+else{
+	document.getElementById("count15").innerText = localStorage.getItem("am15")
+}
+
+
+
+
+
+
 
 //document.getElementById("count2").innerText = am2;
 //document.getElementById("count3").innerText = am3;
@@ -319,8 +387,114 @@ btn9m.addEventListener("click", function(){
 	}
 });
 
+btn10p.addEventListener("click", function(){
+		am10 = Number(localStorage.getItem("am10"));
+		am10 = am10+1;
+		document.getElementById("count10").innerText = am10;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am10', am10);
+});
+
+btn10m.addEventListener("click", function(){
+	am10 = Number(localStorage.getItem("am10"));
+	if (am10 > 0) {
+		am10 = am10-1;
+		document.getElementById("count10").innerText = am10;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am10', am10);
+	}
+});
+
+btn11p.addEventListener("click", function(){
+		am11 = Number(localStorage.getItem("am11"));
+		am11 = am11+1;
+		document.getElementById("count11").innerText = am11;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am11', am11);
+});
+
+btn11m.addEventListener("click", function(){
+	am11 = Number(localStorage.getItem("am11"));
+	if (am11 > 0) {
+		am11 = am11-1;
+		document.getElementById("count11").innerText = am11;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am11', am11);
+	}
+});
+
+btn12p.addEventListener("click", function(){
+		am12 = Number(localStorage.getItem("am12"));
+		am12 = am12+1;
+		document.getElementById("count12").innerText = am12;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am12', am12);
+});
+
+btn12m.addEventListener("click", function(){
+	am12 = Number(localStorage.getItem("am12"));
+	if (am12 > 0) {
+		am12 = am12-1;
+		document.getElementById("count12").innerText = am12;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am12', am12);
+	}
+});
 
 
+btn13p.addEventListener("click", function(){
+		am13 = Number(localStorage.getItem("am13"));
+		am13 = am13+1;
+		document.getElementById("count13").innerText = am13;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am13', am13);
+});
+
+btn13m.addEventListener("click", function(){
+	am13 = Number(localStorage.getItem("am13"));
+	if (am13 > 0) {
+		am13 = am13-1;
+		document.getElementById("count13").innerText = am13;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am13', am13);
+	}
+});
+
+btn14p.addEventListener("click", function(){
+		am14 = Number(localStorage.getItem("am14"));
+		am14 = am14+1;
+		document.getElementById("count14").innerText = am14;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am14', am14);
+});
+
+btn14m.addEventListener("click", function(){
+	am14 = Number(localStorage.getItem("am14"));
+	if (am14 > 0) {
+		am14 = am14-1;
+		document.getElementById("count14").innerText = am14;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am14', am14);
+	}
+});
+
+btn15p.addEventListener("click", function(){
+		am15 = Number(localStorage.getItem("am15"));
+		am15 = am15+1;
+		document.getElementById("count15").innerText = am15;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am15', am15);
+});
+
+btn15m.addEventListener("click", function(){
+	am15 = Number(localStorage.getItem("am15"));
+	if (am15 > 0) {
+		am15 = am15-1;
+		document.getElementById("count15").innerText = am15;
+		tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р Продолжить?");
+		localStorage.setItem('am15', am15);
+	}
+});
 
 
 
@@ -333,13 +507,20 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	am6 = Number(localStorage.getItem("am6"));
 	am7 = Number(localStorage.getItem("am7"));
 	am8 = Number(localStorage.getItem("am8"));
+	am9 = Number(localStorage.getItem("am9"));
+	am10 = Number(localStorage.getItem("am10"));
+	am11 = Number(localStorage.getItem("am11"));
+	am12 = Number(localStorage.getItem("am12"));
+	am13 = Number(localStorage.getItem("am13"));
+	am14 = Number(localStorage.getItem("am14"));
+	am15 = Number(localStorage.getItem("am15"));
 	let paym = document.getElementById("paym").value;
 	let inname = document.getElementById("inname").value;
 	let com = document.getElementById("com").value;
 	topay = (""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
-	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
+	tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 	localStorage.clear();
 	
 	//при клике на основную кнопку отправляем данные в строковом виде
@@ -348,9 +529,3 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 
 let usercard = document.getElementById("usercard");
 
-let p = document.createElement("p");
-
-p.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
-
-usercard.appendChild(p);
