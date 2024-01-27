@@ -185,7 +185,7 @@ else{
 
 
 
-tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250)+"р");
+tg.MainButton.setText(""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*500+am11*550+am12*600+am13*690+am14*460)+"р");
 
 
 
