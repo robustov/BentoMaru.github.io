@@ -22,7 +22,7 @@ body {
 .inner {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 275px 275px 275px;
+	grid-template-rows: 275px 275px 275px 275px 275px 275px 275px;
 	margin-left: auto; 
 	margin-right: 0;
 }
