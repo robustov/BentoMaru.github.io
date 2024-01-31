@@ -520,7 +520,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	topay = (""+(am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*500+am11*550+am12*600+am13*690+am14*460)+"р");
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
-	if (loc != null && number != null) {
+	if (loc != "" && number != "") {
 		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 		localStorage.clear();
 	}
