@@ -1,8 +1,8 @@
 let tg = window.Telegram.WebApp;
-tg.MainButton.color = "ff0000";
 tg.expand();
 tg.MainButton.show()
 tg.MainButton.textColor = '#FFFFFF';
+tg.MainButton.color = "#ff0000";
 //tg.MainButton.color = '#2cab37';
 
 
@@ -527,11 +527,11 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	else  {
 		if (loc != null){
 			tg.MainButton.setText("Введите адрес");
-			tg.MainButton.color = "ff0000";
+			tg.MainButton.color = "#FF0000";
 		}
 		else{
 			tg.MainButton.setText("Введите номер телефона");
-			tg.MainButton.color = "ff0000";
+			tg.MainButton.color = "#FF0000";
 		}
 	}
 	//при клике на основную кнопку отправляем данные в строковом виде
