@@ -526,12 +526,12 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	}
 	else  {
 		if (loc != null){
-			tg.MainButton.setText("Введите адрес")
-			tg.MainButton.color = "ff0000"
+			tg.MainButton.setText("Введите адрес");
+			tg.MainButton.color = "ff0000";
 		}
 		else{
-			tg.MainButton.setText("Введите номер телефона")
-			tg.MainButton.color = "ff0000"
+			tg.MainButton.setText("Введите номер телефона");
+			tg.MainButton.color = "ff0000";
 		}
 	}
 	//при клике на основную кнопку отправляем данные в строковом виде
