@@ -1,9 +1,9 @@
 let tg = window.Telegram.WebApp;
-
+tg.MainButton.color = "ff0000";
 tg.expand();
 tg.MainButton.show()
 tg.MainButton.textColor = '#FFFFFF';
-tg.MainButton.color = '#2cab37';
+//tg.MainButton.color = '#2cab37';
 
 
 let item = "";
