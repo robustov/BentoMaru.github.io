@@ -524,7 +524,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 		localStorage.clear();
 	}
 	else  {
-		if (loc != null){
+		if (loc == ""){
 			tg.MainButton.setText("Введите адрес");
 			tg.MainButton.color = "#FF0000";
 		}
