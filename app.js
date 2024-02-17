@@ -866,6 +866,15 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	am16 = Number(localStorage.getItem("am16"));
 	am17 = Number(localStorage.getItem("am17"));
 	am18 = Number(localStorage.getItem("am18"));
+	amd1 = Number(localStorage.getItem("amd1"));
+	amd2 = Number(localStorage.getItem("amd2"));
+	amd3 = Number(localStorage.getItem("amd3"));
+	amd4 = Number(localStorage.getItem("amd4"));
+	amd5 = Number(localStorage.getItem("amd5"));
+	amd6 = Number(localStorage.getItem("amd6"));
+	amd7 = Number(localStorage.getItem("amd7"));
+	amd8 = Number(localStorage.getItem("amd8"));
+	amd9 = Number(localStorage.getItem("amd9"));
 	let paym = document.getElementById("paym").value;
 	let inname = document.getElementById("inname").value;
 	let com = document.getElementById("com").value;
