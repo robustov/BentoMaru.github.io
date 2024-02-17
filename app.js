@@ -874,7 +874,6 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	amd6 = Number(localStorage.getItem("amd6"));
 	amd7 = Number(localStorage.getItem("amd7"));
 	amd8 = Number(localStorage.getItem("amd8"));
-	amd9 = Number(localStorage.getItem("amd9"));
 	let paym = document.getElementById("paym").value;
 	let inname = document.getElementById("inname").value;
 	let com = document.getElementById("com").value;
@@ -882,7 +881,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
 	if (loc != "" && number != "") {
-		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+""+(""+am18)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
+		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+am18)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 		localStorage.clear();
 	}
 	else  {
