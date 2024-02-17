@@ -44,6 +44,27 @@ let btn17m = document.getElementById("btn17-");
 let btn18p = document.getElementById("btn18+");
 let btn18m = document.getElementById("btn18-");
 
+
+//ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+let btn1dp = document.getElementById("btn1d+");
+let btn1dm = document.getElementById("btn1d-");
+let btn2dp = document.getElementById("btn2d+");
+let btn2dm = document.getElementById("btn2d-");
+let btn3dp = document.getElementById("btn3d+");
+let btn3dm = document.getElementById("btn3d-");
+let btn4dp = document.getElementById("btn4d+");
+let btn4dm = document.getElementById("btn4d-");
+let btn5dp = document.getElementById("btn5d+");
+let btn5dm = document.getElementById("btn5d-");
+let btn6dp = document.getElementById("btn6d+");
+let btn6dm = document.getElementById("btn6d-");
+let btn7dp = document.getElementById("btn7d+");
+let btn7dm = document.getElementById("btn7d-");
+let btn8dp = document.getElementById("btn8d+");
+let btn8dm = document.getElementById("btn8d-");
+//ddddddddddddddddddddddddddddddddddddddddddddddddddddd
+
+
 let locationb = document.getElementById("loc");
 
 //let im1 = document.getElementById("im1");
@@ -68,6 +89,22 @@ let am15 = localStorage.getItem("am15");
 let am16 = localStorage.getItem("am16");
 let am17 = localStorage.getItem("am17");
 let am18 = localStorage.getItem("am18");
+
+//ddddddddddddddddddddddddddddddddddddddd
+let amd1 = localStorage.getItem("amd1");
+let amd2 = localStorage.getItem("amd2");
+let amd3 = localStorage.getItem("amd3");
+let amd4 = localStorage.getItem("amd4");
+let amd5 = localStorage.getItem("amd5");
+let amd6 = localStorage.getItem("amd6");
+let amd7 = localStorage.getItem("amd7");
+let amd8 = localStorage.getItem("amd8");
+
+
+//ddddddddddddddddddddddddddddddddddddddd
+
+
+
 
 if(am1 == null){
 	document.getElementById("count1").innerText = 0;
@@ -194,7 +231,62 @@ else{
 	document.getElementById("count18").innerText = localStorage.getItem("am18")
 }
 
+//ddddddddddddddddddddddddddddddddddd
+if(amd1 == null){
+	document.getElementById("count1d").innerText = 0;
+}
+else{
+	document.getElementById("count1d").innerText = localStorage.getItem("amd1")
+}
+if(amd2 == null){
+	document.getElementById("count2d").innerText = 0;
+}
+else{
+	document.getElementById("count2d").innerText = localStorage.getItem("amd2")
+}
+if(amd3 == null){
+	document.getElementById("count3d").innerText = 0;
+}
+else{
+	document.getElementById("count3d").innerText = localStorage.getItem("amd3")
+}
 
+if(amd4 == null){
+	document.getElementById("count4d").innerText = 0;
+}
+else{
+	document.getElementById("count4d").innerText = localStorage.getItem("amd4")
+}
+
+if(amd5 == null){
+	document.getElementById("count5d").innerText = 0;
+}
+else{
+	document.getElementById("count5d").innerText = localStorage.getItem("amd5")
+}
+
+if(amd6 == null){
+	document.getElementById("count6d").innerText = 0;
+}
+else{
+	document.getElementById("count6d").innerText = localStorage.getItem("amd6")
+}
+
+if(amd7 == null){
+	document.getElementById("count7d").innerText = 0;
+}
+else{
+	document.getElementById("count7d").innerText = localStorage.getItem("amd7")
+}
+
+if(amd8 == null){
+	document.getElementById("count8d").innerText = 0;
+}
+
+else{
+	document.getElementById("count8d").innerText = localStorage.getItem("amd8")
+}
+//ddddddddddddddddddddddddddddddddddd
 
 
 
@@ -217,7 +309,7 @@ tg.MainButton.setText(""+price()+"р");
 
 
 function price() {
-  return am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*550+am11*550+am12*600+am13*690+am14*460+am15*500+am16*500+am17*1550;
+  return am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*550+am11*550+am12*600+am13*690+am14*460+am15*500+am16*500+am17*1550+(amd1+amd2+amd3)*140+amd4*150+(amd5+amd6+amd7+amd8)*270;
 }
 
 
@@ -579,6 +671,177 @@ btn18m.addEventListener("click", function(){
 	}
 });
 
+//ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+btn1dp.addEventListener("click", function(){
+		amd1 = Number(localStorage.getItem("amd1"));
+		amd1 = amd1+1;
+		document.getElementById("count1d").innerText = amd1;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd1', amd1);
+});
+
+btn1dm.addEventListener("click", function(){
+	amd1 = Number(localStorage.getItem("amd1"));
+	if (amd1 > 0) {
+		amd1 = amd1-1;
+		document.getElementById("count1d").innerText = amd1;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd1', amd1);
+	}
+});
+
+
+
+
+
+btn2dp.addEventListener("click", function(){
+		amd2 = Number(localStorage.getItem("amd2"));
+		amd2 = amd2+1;
+		document.getElementById("count2d").innerText = amd2;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd2', amd2);
+});
+
+btn2dm.addEventListener("click", function(){
+	amd2 = Number(localStorage.getItem("amd2"));
+	if (amd2 > 0) {
+		amd2 = amd2-1;
+		document.getElementById("count2d").innerText = amd2;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd2', amd2);
+	}
+});
+
+
+
+
+
+btn3dp.addEventListener("click", function(){
+		amd3 = Number(localStorage.getItem("amd3"));
+		amd3 = amd3+1;
+		document.getElementById("count3d").innerText = amd3;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd3', amd3);
+});
+
+btn3dm.addEventListener("click", function(){
+	amd3 = Number(localStorage.getItem("amd3"));
+	if (amd3 > 0) {
+		amd3 = amd3-1;
+		document.getElementById("count3d").innerText = amd3;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd3', amd3);
+	}
+});
+
+
+
+
+btn4dp.addEventListener("click", function(){
+		amd4 = Number(localStorage.getItem("amd4"));
+		amd4 = amd4+1;
+		document.getElementById("count4d").innerText = amd4;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd4', amd4);
+});
+
+btn4dm.addEventListener("click", function(){
+	amd4 = Number(localStorage.getItem("amd4"));
+	if (amd4 > 0) {
+		amd4 = amd4-1;
+		document.getElementById("count4d").innerText = amd4;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd4', amd4);
+	}
+});
+
+
+
+
+
+btn5dp.addEventListener("click", function(){
+		amd5 = Number(localStorage.getItem("amd5"));
+		amd5 = amd5+1;
+		document.getElementById("count5d").innerText = amd5;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd5', amd5);
+});
+
+btn5dm.addEventListener("click", function(){
+	amd5 = Number(localStorage.getItem("amd5"));
+	if (amd5 > 0) {
+		amd5 = amd5-1;
+		document.getElementById("count5d").innerText = amd5;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd5', amd5);
+	}
+});
+
+
+
+
+
+btn6dp.addEventListener("click", function(){
+		amd6 = Number(localStorage.getItem("amd6"));
+		amd6 = amd6+1;
+		document.getElementById("count6d").innerText = amd6;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd6', amd6);
+});
+
+btn6dm.addEventListener("click", function(){
+	amd6 = Number(localStorage.getItem("amd6"));
+	if (amd6 > 0) {
+		amd6 = amd6-1;
+		document.getElementById("count6d").innerText = amd6;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd6', amd6);
+	}
+});
+
+
+
+
+
+
+btn7dp.addEventListener("click", function(){
+		amd7 = Number(localStorage.getItem("amd7"));
+		amd7 = amd7+1;
+		document.getElementById("count7d").innerText = amd7;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd7', amd7);
+});
+
+btn7dm.addEventListener("click", function(){
+	amd7 = Number(localStorage.getItem("amd7"));
+	if (amd7 > 0) {
+		amd7 = amd7-1;
+		document.getElementById("count7d").innerText = amd7;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd7', amd7);
+	}
+});
+
+
+
+btn8dp.addEventListener("click", function(){
+		amd8 = Number(localStorage.getItem("amd8"));
+		amd8 = amd8+1;
+		document.getElementById("count8d").innerText = amd8;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd8', amd8);
+});
+
+btn8dm.addEventListener("click", function(){
+	amd8 = Number(localStorage.getItem("amd8"));
+	if (amd8 > 0) {
+		amd8 = amd8-1;
+		document.getElementById("count8d").innerText = amd8;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd8', amd8);
+	}
+});
+//ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 
 
@@ -610,7 +873,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
 	if (loc != "" && number != "") {
-		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+am18)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
+		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+""+(""+am18)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 		localStorage.clear();
 	}
 	else  {
