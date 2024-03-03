@@ -43,7 +43,18 @@ let btn17p = document.getElementById("btn17+");
 let btn17m = document.getElementById("btn17-");
 let btn18p = document.getElementById("btn18+");
 let btn18m = document.getElementById("btn18-");
-
+let btn19p = document.getElementById("btn19+");
+let btn19m = document.getElementById("btn19-");
+let btn20p = document.getElementById("btn20+");
+let btn20m = document.getElementById("btn20-");
+let btn21p = document.getElementById("btn21+");
+let btn21m = document.getElementById("btn21-");
+let btn22p = document.getElementById("btn22+");
+let btn22m = document.getElementById("btn22-");
+let btn23p = document.getElementById("btn23+");
+let btn23m = document.getElementById("btn23-");
+let btn24p = document.getElementById("btn24+");
+let btn24m = document.getElementById("btn24-");
 
 //ddddddddddddddddddddddddddddddddddddddddddddddddddddd
 let btn1dp = document.getElementById("btn1d+");
@@ -89,6 +100,12 @@ let am15 = localStorage.getItem("am15");
 let am16 = localStorage.getItem("am16");
 let am17 = localStorage.getItem("am17");
 let am18 = localStorage.getItem("am18");
+let am19 = localStorage.getItem("am19");
+let am20 = localStorage.getItem("am20");
+let am21 = localStorage.getItem("am21");
+let am22 = localStorage.getItem("am22");
+let am23 = localStorage.getItem("am23");
+let am24 = localStorage.getItem("am24");
 
 //ddddddddddddddddddddddddddddddddddddddd
 let amd1 = localStorage.getItem("amd1");
@@ -230,6 +247,60 @@ if(am18 == null){
 else{
 	document.getElementById("count18").innerText = localStorage.getItem("am18")
 }
+if(am19 == null){
+	document.getElementById("count19").innerText = 0;
+}
+
+else{
+	document.getElementById("count19").innerText = localStorage.getItem("am19")
+}
+if(am20 == null){
+	document.getElementById("count20").innerText = 0;
+}
+
+else{
+	document.getElementById("count20").innerText = localStorage.getItem("am20")
+}
+if(am21 == null){
+	document.getElementById("count21").innerText = 0;
+}
+
+else{
+	document.getElementById("count21").innerText = localStorage.getItem("am21")
+}
+if(am22 == null){
+	document.getElementById("count22").innerText = 0;
+}
+
+else{
+	document.getElementById("count22").innerText = localStorage.getItem("am22")
+}
+if(am23 == null){
+	document.getElementById("count23").innerText = 0;
+}
+
+else{
+	document.getElementById("count23").innerText = localStorage.getItem("am23")
+}
+if(am24 == null){
+	document.getElementById("count24").innerText = 0;
+}
+
+else{
+	document.getElementById("count24").innerText = localStorage.getItem("am24")
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 //ddddddddddddddddddddddddddddddddddd
 if(amd1 == null){
@@ -309,7 +380,7 @@ tg.MainButton.setText(""+price()+"р");
 
 
 function price() {
-  return am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*550+am11*550+am12*600+am13*690+am14*460+am15*500+am16*500+am17*1550+(amd1+amd2+amd3)*140+amd4*150+(amd5+amd6+amd7+amd8)*270;
+  return am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*550+am11*550+am12*600+am13*690+am14*460+am15*500+am16*500+am17*1550+am18*1200+am19*980+am20*2000+am21*1950+am22*1500+am23*200+(amd1+amd2+amd3)*140+amd4*150+(amd5+amd6+amd7+amd8)*270;
 }
 
 
@@ -670,6 +741,121 @@ btn18m.addEventListener("click", function(){
 		localStorage.setItem('am18', am18);
 	}
 });
+btn19p.addEventListener("click", function(){
+		am19 = Number(localStorage.getItem("am19"));
+		am19 = am19+1;
+		document.getElementById("count19").innerText = am19;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am19', am19);
+});
+
+btn19m.addEventListener("click", function(){
+	am19 = Number(localStorage.getItem("am19"));
+	if (am19 > 0) {
+		am19 = am19-1;
+		document.getElementById("count19").innerText = am19;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am19', am19);
+	}
+});
+btn20p.addEventListener("click", function(){
+		am20 = Number(localStorage.getItem("am20"));
+		am20 = am20+1;
+		document.getElementById("count20").innerText = am20;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am20', am20);
+});
+
+btn20m.addEventListener("click", function(){
+	am20 = Number(localStorage.getItem("am20"));
+	if (am20 > 0) {
+		am20 = am20-1;
+		document.getElementById("count20").innerText = am20;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am20', am20);
+	}
+});
+btn21p.addEventListener("click", function(){
+		am21 = Number(localStorage.getItem("am21"));
+		am21 = am21+1;
+		document.getElementById("count21").innerText = am21;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am21', am21);
+});
+
+btn21m.addEventListener("click", function(){
+	am21 = Number(localStorage.getItem("am21"));
+	if (am21 > 0) {
+		am21 = am21-1;
+		document.getElementById("count21").innerText = am21;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am21', am21);
+	}
+});
+btn22p.addEventListener("click", function(){
+		am22 = Number(localStorage.getItem("am22"));
+		am22 = am22+1;
+		document.getElementById("count22").innerText = am22;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am22', am22);
+});
+
+btn22m.addEventListener("click", function(){
+	am22 = Number(localStorage.getItem("am22"));
+	if (am22 > 0) {
+		am22 = am22-1;
+		document.getElementById("count22").innerText = am22;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am22', am22);
+	}
+});
+btn23p.addEventListener("click", function(){
+		am23 = Number(localStorage.getItem("am23"));
+		am23 = am23+1;
+		document.getElementById("count23").innerText = am23;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am23', am23);
+});
+
+btn23m.addEventListener("click", function(){
+	am23 = Number(localStorage.getItem("am23"));
+	if (am23 > 0) {
+		am23 = am23-1;
+		document.getElementById("count23").innerText = am23;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am23', am23);
+	}
+});
+btn24p.addEventListener("click", function(){
+		am24 = Number(localStorage.getItem("am24"));
+		am24 = am24+1;
+		document.getElementById("count24").innerText = am24;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am24', am24);
+});
+
+btn24m.addEventListener("click", function(){
+	am24 = Number(localStorage.getItem("am24"));
+	if (am24 > 0) {
+		am24 = am24-1;
+		document.getElementById("count24").innerText = am24;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('am24', am24);
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 btn1dp.addEventListener("click", function(){
@@ -866,6 +1052,13 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	am16 = Number(localStorage.getItem("am16"));
 	am17 = Number(localStorage.getItem("am17"));
 	am18 = Number(localStorage.getItem("am18"));
+	am19 = Number(localStorage.getItem("am19"));
+	am20 = Number(localStorage.getItem("am20"));
+	am21 = Number(localStorage.getItem("am21"));
+	am22 = Number(localStorage.getItem("am22"));
+	am23 = Number(localStorage.getItem("am23"));
+	am24 = Number(localStorage.getItem("am24"));
+
 	amd1 = Number(localStorage.getItem("amd1"));
 	amd2 = Number(localStorage.getItem("amd2"));
 	amd3 = Number(localStorage.getItem("amd3"));
@@ -881,7 +1074,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
 	if (loc != "" && number != "") {
-		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+am18)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
+		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+am18)+" "+(""+am19)+" "+(""+am20)+" "+(""+am21)+" "+(""+am22)+" "+(""+am23)+" "+(""+am24)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 		localStorage.clear();
 	}
 	else  {
