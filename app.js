@@ -73,6 +73,14 @@ let btn7dp = document.getElementById("btn7d+");
 let btn7dm = document.getElementById("btn7d-");
 let btn8dp = document.getElementById("btn8d+");
 let btn8dm = document.getElementById("btn8d-");
+let btn9dp = document.getElementById("btn9d+");
+let btn9dm = document.getElementById("btn9d-");
+let btn10dp = document.getElementById("btn10d+");
+let btn10dm = document.getElementById("btn10d-");
+let btn11dp = document.getElementById("btn11d+");
+let btn11dm = document.getElementById("btn11d-");
+let btn12dp = document.getElementById("btn12d+");
+let btn12dm = document.getElementById("btn12d-");
 //ddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 
@@ -116,6 +124,10 @@ let amd5 = localStorage.getItem("amd5");
 let amd6 = localStorage.getItem("amd6");
 let amd7 = localStorage.getItem("amd7");
 let amd8 = localStorage.getItem("amd8");
+let amd9 = localStorage.getItem("amd9");
+let amd10 = localStorage.getItem("amd10");
+let amd11 = localStorage.getItem("amd11");
+let amd12 = localStorage.getItem("amd12");
 
 
 //ddddddddddddddddddddddddddddddddddddddd
@@ -357,6 +369,35 @@ if(amd8 == null){
 else{
 	document.getElementById("count8d").innerText = localStorage.getItem("amd8")
 }
+
+if(amd9 == null){
+	document.getElementById("count9d").innerText = 0;
+}
+
+else{
+	document.getElementById("count9d").innerText = localStorage.getItem("amd9")
+}
+if(amd10 == null){
+	document.getElementById("count10d").innerText = 0;
+}
+
+else{
+	document.getElementById("count10d").innerText = localStorage.getItem("amd10")
+}
+if(amd11 == null){
+	document.getElementById("count11d").innerText = 0;
+}
+
+else{
+	document.getElementById("count11d").innerText = localStorage.getItem("amd11")
+}
+if(amd12 == null){
+	document.getElementById("count12d").innerText = 0;
+}
+
+else{
+	document.getElementById("count12d").innerText = localStorage.getItem("amd12")
+}
 //ddddddddddddddddddddddddddddddddddd
 
 
@@ -380,7 +421,7 @@ tg.MainButton.setText(""+price()+"р");
 
 
 function price() {
-  return am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*550+am11*550+am12*600+am13*690+am14*460+am15*500+am16*500+am17*1550+am18*1200+am19*980+am20*2000+am21*1950+am22*1500+am23*200+(amd1+amd2+amd3)*140+amd4*150+(amd5+amd6+amd7+amd8)*270;
+  return am1*450+am2*450+am3*800+am4*800+am5*850+am6*800+am7*1250+am8*1250+am9*550+am10*550+am11*550+am12*600+am13*690+am14*460+am15*500+am16*500+am17*1550+am18*1200+am19*980+am20*2000+am21*1950+am22*1500+am23*200+(amd1+amd2+amd3)*140+amd4*150+(amd5+amd6+amd7+amd8)*270+amd9*350+amd10*350+amd11*450+amd12*350;
 }
 
 
@@ -1027,6 +1068,78 @@ btn8dm.addEventListener("click", function(){
 		localStorage.setItem('amd8', amd8);
 	}
 });
+
+btn9dp.addEventListener("click", function(){
+		amd9 = Number(localStorage.getItem("amd9"));
+		amd9 = amd9+1;
+		document.getElementById("count9d").innerText = amd9;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd9', amd9);
+});
+
+btn9dm.addEventListener("click", function(){
+	amd9 = Number(localStorage.getItem("amd9"));
+	if (amd9 > 0) {
+		amd9 = amd9-1;
+		document.getElementById("count9d").innerText = amd9;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd9', amd9);
+	}
+});
+
+btn10dp.addEventListener("click", function(){
+		amd10 = Number(localStorage.getItem("amd10"));
+		amd10 = amd10+1;
+		document.getElementById("count10d").innerText = amd10;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd10', amd10);
+});
+
+btn10dm.addEventListener("click", function(){
+	amd10 = Number(localStorage.getItem("amd10"));
+	if (amd10 > 0) {
+		amd10 = amd10-1;
+		document.getElementById("count10d").innerText = amd10;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd10', amd10);
+	}
+});
+
+btn11dp.addEventListener("click", function(){
+		amd11 = Number(localStorage.getItem("amd11"));
+		amd11 = amd11+1;
+		document.getElementById("count11d").innerText = amd11;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd11', amd11);
+});
+
+btn11dm.addEventListener("click", function(){
+	amd11 = Number(localStorage.getItem("amd11"));
+	if (amd11 > 0) {
+		amd11 = amd11-1;
+		document.getElementById("count11d").innerText = amd11;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd11', amd11);
+	}
+});
+
+btn12dp.addEventListener("click", function(){
+		amd12 = Number(localStorage.getItem("amd12"));
+		amd12 = amd12+1;
+		document.getElementById("count12d").innerText = amd12;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd12', amd12);
+});
+
+btn12dm.addEventListener("click", function(){
+	amd12 = Number(localStorage.getItem("amd12"));
+	if (amd12 > 0) {
+		amd12 = amd12-1;
+		document.getElementById("count12d").innerText = amd12;
+		tg.MainButton.setText(""+price()+"р Продолжить?");
+		localStorage.setItem('amd12', amd12);
+	}
+});
 //ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
 
 
@@ -1067,6 +1180,10 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	amd6 = Number(localStorage.getItem("amd6"));
 	amd7 = Number(localStorage.getItem("amd7"));
 	amd8 = Number(localStorage.getItem("amd8"));
+	amd9 = Number(localStorage.getItem("amd9"));
+	amd10 = Number(localStorage.getItem("amd10"));
+	amd11 = Number(localStorage.getItem("amd11"));
+	amd12 = Number(localStorage.getItem("amd12"));
 	let paym = document.getElementById("paym").value;
 	let inname = document.getElementById("inname").value;
 	let com = document.getElementById("com").value;
@@ -1074,7 +1191,7 @@ Telegram.WebApp.onEvent('mainButtonClicked', function(){
 	let loc = document.getElementById("loc").value;
 	let number = document.getElementById("number").value;
 	if (loc != "" && number != "") {
-		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+am18)+" "+(""+am19)+" "+(""+am20)+" "+(""+am21)+" "+(""+am22)+" "+(""+am23)+" "+(""+am24)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
+		tg.sendData(((""+am1)+" "+(""+am2)+" "+(""+am3)+" "+(""+am4)+" "+(""+am5)+" "+(""+am6)+" "+(""+am7)+" "+(""+am8)+" "+(""+am9)+" "+(""+am10)+" "+(""+am11)+" "+(""+am12)+" "+(""+am13)+" "+(""+am14)+" "+(""+am15)+" "+(""+am16)+" "+(""+am17)+" "+(""+am18)+" "+(""+am19)+" "+(""+am20)+" "+(""+am21)+" "+(""+am22)+" "+(""+am23)+" "+(""+am24)+" "+(""+amd1)+" "+(""+amd2)+" "+(""+amd3)+" "+(""+amd4)+" "+(""+amd5)+" "+(""+amd6)+" "+(""+amd7)+" "+(""+amd8)+" "+(""+amd9)+" "+(""+amd10)+" "+(""+amd11)+" "+(""+amd12)+" !"+(""+loc)+"!"+(""+number)+"!"+(topay)+"!"+(paym)+"!"+(inname)+"!"+(com)));
 		localStorage.clear();
 	}
 	else  {
